@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f2f4f8;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.container {
+  width: 1100px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+}
+
+/* TOP BAR */
+
+.top {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  opacity: .8;
+}
+
+/* GAME */
+
+.game {
+  display: flex;
+  gap: 20px;
+}
+
+/* CANVAS */
+
+canvas {
+  background: white;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+/* SIDE PANEL */
+
+.side {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* TOOLS */
+
+.tools {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* CHAT */
+
+.chat {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#messages li {
+  list-style: none;
+  padding: 5px;
+}
+
+/* SCORE */
+
+.score {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.score li {
+  list-style: none;
+  padding: 5px;
+}
+
+/* INFO */
+
+.info {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+  .game{flex-direction:column}
+  .side{width:100%}
+}
